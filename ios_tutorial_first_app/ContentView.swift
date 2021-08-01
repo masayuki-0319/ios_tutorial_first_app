@@ -4,7 +4,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Text("Swift！")
-                .navigationBarTitle("タイトル")
+                .navigationBarItems(leading: Text("アイテム！"))
         }
     }
 }
