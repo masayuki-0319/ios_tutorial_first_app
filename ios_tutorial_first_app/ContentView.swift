@@ -2,9 +2,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        HStack {
             Text("Swift！")
-                .navigationBarItems(leading: Text("アイテム！"))
+            Text("Android！")
         }
     }
 }
