@@ -6,7 +6,7 @@ struct ContentView: View {
             Text("Swift！").padding().font(.headline)
             Text("Android！").padding().font(.largeTitle)
             Button(action: {print("クロージャテスト")}) {
-                Text("ボタンだよ")
+                Text("ボタンだよ").border(Color.black)
             }
         }
     }
