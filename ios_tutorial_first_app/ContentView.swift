@@ -2,9 +2,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-            Text("Swift！")
-            Text("Android！")
+        VStack {
+            Text("Swift！").padding().font(.headline)
+            Text("Android！").padding().font(.largeTitle)
         }
     }
 }
