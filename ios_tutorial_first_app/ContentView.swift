@@ -4,18 +4,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                HStack {
-                    Text("□")
-                    Text("Swift！")
-                }
-                HStack {
-                    Text("□")
-                    Text("Android！")
-                }
-                HStack {
-                    Text("□")
-                    Text("Linux！")
-                }
+                ListRow(task: "Swift", isCheck: true)
+                ListRow(task: "Linux", isCheck: true)
+                ListRow(task: "Windows", isCheck: false)
                 Text ("+").font(.title)
             }
             .navigationTitle(Text("Tasks"))

@@ -1,20 +1,23 @@
-//
-//  ListRow.swift
-//  ios_tutorial_first_app
-//
-//  Created by 大西将之 on 2021/08/01.
-//
-
 import SwiftUI
 
 struct ListRow: View {
+    let task: String;
+    var isCheck: Bool;
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            if isCheck {
+                Text("■")
+            } else {
+                Text("□")
+            }
+            Text(task)
+         }
     }
 }
 
 struct ListRow_Previews: PreviewProvider {
     static var previews: some View {
-        ListRow()
+        ListRow(task: "Swift", isCheck: true)
     }
 }
