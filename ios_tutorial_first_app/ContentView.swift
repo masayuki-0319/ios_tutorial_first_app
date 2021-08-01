@@ -2,12 +2,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Swift！").padding().font(.headline)
-            Text("Android！").padding().font(.largeTitle)
-            Button(action: {print("クロージャテスト")}) {
-                Text("ボタンだよ").border(Color.black)
+        NavigationView {
+            List {
+                HStack {
+                    Text("□")
+                    Text("Swift！")
+                }
+                HStack {
+                    Text("□")
+                    Text("Android！")
+                }
+                HStack {
+                    Text("□")
+                    Text("Linux！")
+                }
+                Text ("+").font(.title)
             }
+            .navigationTitle(Text("Tasks"))
+            .navigationBarItems(trailing: Text("Delete"))
         }
     }
 }
