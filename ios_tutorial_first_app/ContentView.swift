@@ -12,16 +12,12 @@ struct Task: Identifiable {
 }
 
 struct ContentView: View {
-    var tasks = [
-        Task(title: "Swift", checked: true),
-        Task(title: "Linux", checked: false),
-        Task(title: "Windows", checked: false)
-    ]
+    var userData = UserData()
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(tasks) { task in
+                ForEach(userData.tasks) { task in
                     ListRow(task: task.title, isCheck: task.checked)
                 }
                 Text ("+").font(.title)
