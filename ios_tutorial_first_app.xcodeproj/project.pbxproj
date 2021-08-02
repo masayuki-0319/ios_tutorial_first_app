@@ -13,6 +13,7 @@
 		E6FF1D4926B5782E0038B54F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FF1D4826B5782E0038B54F /* Preview Assets.xcassets */; };
 		E6FF1D5126B6CA7B0038B54F /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF1D5026B6CA7B0038B54F /* ListRow.swift */; };
 		E6FF1D5326B84C4F0038B54F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF1D5226B84C4F0038B54F /* UserData.swift */; };
+		E6FF1D5526B84D010038B54F /* UserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF1D5426B84D010038B54F /* UserTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E6FF1D4A26B5782E0038B54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6FF1D5026B6CA7B0038B54F /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		E6FF1D5226B84C4F0038B54F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		E6FF1D5426B84D010038B54F /* UserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				E6FF1D4126B5782C0038B54F /* ios_tutorial_first_appApp.swift */,
 				E6FF1D4326B5782C0038B54F /* ContentView.swift */,
+				E6FF1D5426B84D010038B54F /* UserTask.swift */,
 				E6FF1D5226B84C4F0038B54F /* UserData.swift */,
 				E6FF1D5026B6CA7B0038B54F /* ListRow.swift */,
 				E6FF1D4526B5782E0038B54F /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6FF1D5526B84D010038B54F /* UserTask.swift in Sources */,
 				E6FF1D4426B5782C0038B54F /* ContentView.swift in Sources */,
 				E6FF1D4226B5782C0038B54F /* ios_tutorial_first_appApp.swift in Sources */,
 				E6FF1D5326B84C4F0038B54F /* UserData.swift in Sources */,
