@@ -7,8 +7,10 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(userData.tasks) { task in
+                    let index = self.userData.tasks.firstIndex(of: task)
+                    
                     Button(action: {
-                        self.userData.tasks[0].checked.toggle()
+                        self.userData.tasks[index!].checked.toggle()
                     })
                     {
                         ListRow(task: task.title, isCheck: task.checked)
