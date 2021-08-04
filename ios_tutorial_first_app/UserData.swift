@@ -6,4 +6,6 @@ class UserData: ObservableObject {
         Task(title: "Linux", checked: false),
         Task(title: "Windows", checked: false)
     ]
+    
+    @Published var isEditing: Bool = false
 }
